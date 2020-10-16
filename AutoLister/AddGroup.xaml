@@ -1,0 +1,18 @@
+﻿<Window x:Class="AutoLister.AddGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoLister"
+        mc:Ignorable="d"
+        Title="AddGroup" Height="450" Width="364.377">
+    <Grid>
+        <Label Content="Название: " HorizontalAlignment="Left" Margin="29,36,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" Height="21"/>
+        <Label Content="Список группы:" HorizontalAlignment="Left" Margin="29,82,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="GroupListPath" HorizontalAlignment="Left" Height="23" Margin="29,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="209"/>
+        <Button x:Name="SelectGroupListPathButton" Content="Выбрать" HorizontalAlignment="Left" Margin="258,113,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="SelectGroupListPathButton_Click"/>
+        <Button x:Name="AddGroupButton" Content="Добавить" HorizontalAlignment="Left" Margin="94,166,0,0" VerticalAlignment="Top" Width="136" Height="42" Click="AddGroupButton_Click"/>
+
+    </Grid>
+</Window>

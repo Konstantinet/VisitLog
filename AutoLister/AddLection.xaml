@@ -1,0 +1,24 @@
+﻿<Window x:Class="AutoLister.AddLection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoLister"
+        mc:Ignorable="d"
+        Title="Список посещения лекции" Height="320.4" Width="362.939">
+    <Grid Margin="0,0,3.8,0">
+        <Button x:Name="SelectFileButton" Content="Выбрать" HorizontalAlignment="Left" Margin="265,132,0,0" VerticalAlignment="Top" Width="78" Height="23" Click="SelectFileButton_Click"/>
+        <Label Content="Тема: " HorizontalAlignment="Left" Margin="36,27,-36.8,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox x:Name="ThemeField" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" Margin="80,27,-250.8,0"/>
+        <Label Content="Дата: " HorizontalAlignment="Left" Margin="36,70,-36.8,0" VerticalAlignment="Top" Width="44"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="85,70,-175.8,0" VerticalAlignment="Top" Width="134" Height="25"/>
+        <TextBox x:Name="SelectedFile" HorizontalAlignment="Left" Height="23" Margin="36,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
+        <Button Content="Создать" HorizontalAlignment="Left" Margin="123,246,0,0" VerticalAlignment="Top" Width="121" Height="34" Click="AddButton_Click"/>
+        <CheckBox x:Name="AddThemeCheck" Content="Добавить название и дату лекции в файл" HorizontalAlignment="Left" Margin="36,226,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SelectSavePath" Content="Выбрать" HorizontalAlignment="Left" Margin="265,189,0,0" VerticalAlignment="Top" Width="78" Height="23" Click="SelectSavePath_Click"/>
+        <TextBox x:Name="SavePath" HorizontalAlignment="Left" Height="23" Margin="36,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
+        <Label Content="Выберите файл: " HorizontalAlignment="Left" Margin="36,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Место сохранения отчета:" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
